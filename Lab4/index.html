@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Lab</title>
+  </head>
+  <body>
+    <!--Task JS3-->
+    <script>
+      console.log("c", firstName);
+    </script>
+    <!--Task JS1-->
+    <script src="external.js"></script>
+
+    <!--Task JS2-->
+    <script>
+      //Numbers:
+      var number1 = 3;
+      var number2 = 2.9;
+      var number3 = 90;
+      var numbers = number1 + number2 + number3;
+      //Name:
+      var firstName = "Mohamed";
+      var lastName = "Salem";
+      //Flag:
+      var flag = true;
+
+      //a- Summation of number1 and number2:
+      console.log("a-", number1 + number2);
+
+      //b- Summation of number1 and numbers:
+      console.log("b-", flag + numbers);
+
+      //c- Summation of flag andnumber2:
+      console.log("c-", flag + number2);
+
+      //d- Summation of firstName and flag:
+      console.log("d-", firstName + flag);
+
+      //e- Summation of number1 and firstName:
+      console.log("e-", number1 + firstName);
+
+      //f- Multiplication of number1 and flag:
+      console.log("f-", number1 * flag);
+
+      //g- Divide number1 and latName:
+      console.log("g-", number1 / lastName);
+
+      //h- Print your full Name using firstName and lastName variables:
+      console.log("h-", firstName + " " + lastName);
+
+      //i- Display lastName characters on console as array of charachters:
+      console.log("i:", lastName.split(""));
+    </script>
+
+    <!--Task JS3-->
+    <script>
+      //a- Try to print firstName before the line of the variable definition?
+      console.log("a", firstName);
+      var firstName = "Mohamed";
+
+      //b- According to assignment a ,What if you define the firstName with
+      //var ? what will appear on console!
+      // 'undefined'
+
+      //c- Create another embedded script before external script in html and
+      //tryto call firstName ? does the result change if we define firstName
+      //with or without var keyword
+      // 'yes, error firstName is not defined'
+
+      //d- Try to change your firstName character at index 3
+      //,firstName[3]=’A’ Then print firstName variable.
+      firstName = firstName.substring(0, 3) + "A" + firstName.substring(4);
+      console.log("d", firstName);
+    </script>
+
+    <!--Task JS4-->
+    <script src="functionsScript.js"></script>
+    <script src="FunctionUsingScript.js"></script>
+  </body>
+</html>
