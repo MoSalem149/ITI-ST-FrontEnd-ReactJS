@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 10vh;
+  align-items: center;
+}
+
+ul>li {
+  list-style: none;
+}
+
+ul>li>a {
+  color: rgb(232 25 25);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ul>li>a:hover {
+  color: rgb(164 154 154);
+}
+
+.intro {
+  height: 90vh;
+  background-image: url(Images/laptop_top.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro>h3 {
+  text-align: center;
+
+}
+
+.intro>button {
+  margin: 1rem;
+  padding: 1.5rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  font-weight: bold;
+  background-image: linear-gradient(to right, rgb(161 220 242), rgb(47 95 209));
+}
+
+.intro>button:hover {
+  background-image: linear-gradient(to left, rgb(161 220 242), rgb(47 95 209));
+}
+
+.intro2 h2 {
+  font-family: 'Courier New', Courier, monospace, cursive;
+  font-size: large;
+  color: brown;
+  text-align: center;
+  margin: 15px;
+}
+
+.intro2 .p1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.boxs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(8, auto);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 400px;
+}
+
+.boxs>div {
+  background-color: #d1d0d0;
+  text-align: left;
+  padding: 30px;
+  margin-bottom: 0;
+}
+
+.intro2 {
+  position: relative;
+}
+
+.checkbox-container {
+  position: absolute;
+  bottom: 0;
+  margin-left: 400px;
+}
+
+i {
+  color: brown;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin-left: 80px;
+}
+
+.footer {
+  display: flex;
+  background-color: black;
+  color: white;
+}
+
+.social-icons i {
+  color: white;
+  margin-right: 10px;
+}
+
+.contact-section p i {
+  color: white;
+  margin-right: 10px;
+}
+
+
+
+.contact-section,
+.follow-section {
+  padding: 20px;
+}
+
+.contact-section {
+  flex: 60%;
+}
+
+.follow-section {
+  flex: 40%;
+}
+
+.social-icons a {
+  display: inline-block;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-icons a:nth-child(1) i {
+  color: #1877f2;
+  padding-left: 8px;
+}
+
+.social-icons a:nth-child(2) i {
+  color: #1da1f2;
+  padding-left: 8px;
+}
+
+.social-icons a:nth-child(3) i {
+  color: #ff0000;
+  padding-left: 8px;
+}

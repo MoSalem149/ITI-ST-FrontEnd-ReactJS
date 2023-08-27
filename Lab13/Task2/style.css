@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "aside header"
+    "aside main"
+    "aside main";
+}
+
+.header {
+  grid-area: header;
+  height: 10vh;
+}
+
+.main {
+  grid-area: main;
+  width: 80vw;
+  height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aside {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  height: 100vh;
+  width: 20vw;
+}
+
+.aside ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.aside ul li a {
+  text-decoration: none;
+  margin: 0 50px;
+  color: gray;
+}
+
+.aside h4,
+.aside p {
+  color: gray;
+  margin: 10px 50px;
+  align-self: flex-start;
+}
+
+.aside h5 {
+  color: gray;
+  margin: 10px 50px;
+  align-self: flex-start;
+}
+
+.aside h5 {
+  color: gray;
+  margin: 40px 50px;
+}
+
+.aside ul li.Portfolio a {
+  color: black;
+}
+
+.aside img {
+  margin: 2px;
+  width: 50px;
+  height: 50px;
+}
+
+.aside .himg {
+  margin: 15px;
+  width: 150px;
+  height: 50px;
+}
+
+.h5-and-imgFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.imgFlex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.aside h5 {
+  color: gray;
+  margin: 15px 0;
+  align-self: flex-start;
+}
+
+.header {
+  background-color: rgb(237, 195, 141);
+}
+
+.header ul {
+  display: flex;
+  justify-content: flex-start;
+  min-height: 10vh;
+  align-items: center;
+}
+
+.header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.ha {
+  padding: 8px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+.main img {
+  width: calc(25% - 10px);
+  height: auto;
+  margin: 0;
+}
