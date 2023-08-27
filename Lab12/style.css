@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  height: 90vh;
+  margin: 40px auto;
+  border: 4px solid yellow;
+  border-radius: 20px;
+  box-shadow: inset 25px 25px 40px rgb(60, 206, 162),
+    inset -25px -25px 40px rgb(60, 206, 162);
+  position: relative;
+  display: flex;
+  box-shadow: orangered -5px -5px 10px, palevioletred 20px 20px 15px, rgb(255, 8, 255) 20px 20px 40px, inset 25px 25px 40px rgb(60, 206, 162),
+    inset -25px -25px 40px rgb(60, 206, 162);
+}
+
+.container:hover {
+  transform: skew(8deg);
+  transition: all 2s ease;
+  box-shadow: orangered -5px -5px 10px, rgb(7, 165, 233) 20px 20px 40px, inset 30px 30px 60px rgb(55, 245, 134),
+    inset -30px -30px 60px rgb(55, 245, 134);
+}
+
+.container:active {
+  transform: scale(0.5);
+  transition: all 2s ease;
+  box-shadow: orangered -5px -5px 10px, rgb(255, 42, 0) 20px 20px 40px, inset 30px 30px 60px rgb(55, 245, 134),
+    inset -30px -30px 60px rgb(55, 245, 134);
+}
+
+.leftContainer {
+  border: 7px solid black;
+  border-radius: 20px;
+  width: 30%;
+  height: 75vh;
+  margin: 30px 20px;
+  column-count: 3;
+  overflow-x: scroll;
+  column-rule: 3px solid red;
+  box-shadow: inset 30px 30px 60px rgb(153, 215, 46),
+    inset -30px -30px 60px rgb(153, 215, 46);
+  text-align: center;
+  padding: 15px;
+}
+
+mark {
+  background-color: red;
+}
+
+mark:hover {
+  background-color: red;
+  text-shadow: 3px 3px 2px yellow;
+}
+
+.rightContainer {
+  border: 7px solid blue;
+  border-radius: 20px;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px;
+  height: 75vh;
+  margin: 30px 40px;
+  overflow-y: scroll;
+  box-shadow: inset 30px 30px 60px rgb(55, 245, 134),
+    inset -30px -30px 60px rgb(55, 245, 134);
+}
+
+.rightContainer img {
+  width: 20%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-left: 10px;
+  border: 4px solid blue;
+  box-shadow: rgb(255, 8, 255) 3px 8px 15px;
+}
+
+img:hover {
+  transform: scale(1.3);
+  transition: all 2s ease;
+  box-shadow: yellow 3px 8px 15px;
+}
+
+@media (orientation: portrait) {
+  .rightContainer {
+    width: 100%;
+  }
+
+  .rightContainer img {
+    width: 100%;
+    max-width: 70%;
+    margin: 15px auto;
+    transform: rotate(30deg);
+  }
+
+  img:hover {
+    transform: scale(1.3);
+    transition: all 2s ease;
+    box-shadow: yellow 3px 8px 15px;
+  }
+
+  img:active {
+    transform: scale(1.3);
+    transition: all 2s ease;
+    border: 3px dotted blue;
+    box-shadow: red 3px 8px 15px;
+  }
+
+  .container:hover {
+    transform: skew(0deg);
+    box-shadow: orangered -5px -5px 10px, rgb(255, 8, 255) 20px 20px 40px, rgb(255, 42, 0) 20px 20px 40px, inset 30px 30px 60px rgb(55, 245, 134),
+      inset -30px -30px 60px rgb(55, 245, 134);
+  }
+
+  .container:active {
+    transform: scale(1);
+    box-shadow: orangered -5px -5px 10px, rgb(255, 42, 0) 20px 20px 40px, rgb(255, 8, 255) 20px 20px 40px, inset 30px 30px 60px rgb(55, 245, 134),
+      inset -30px -30px 60px rgb(55, 245, 134);
+  }
+
+}
