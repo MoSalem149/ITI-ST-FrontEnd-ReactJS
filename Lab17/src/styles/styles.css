@@ -1,0 +1,13 @@
+.custom-row {
+  background-color: yellow;
+}
+
+.custom-header {
+  background-color: goldenrod;
+  padding: 1rem 0;
+}
+
+.custom-brand {
+  color: #343a40;
+  font-weight: bold;
+}
