@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskDay2-BS-Model-Dialog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <style>
+      h1 {
+        margin-top: 30px;
+        text-decoration: underline;
+      }
+      p {
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid my-5 text-center">
+      <button
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#mymodal"
+      >
+        login
+      </button>
+      <div class="modal" id="mymodal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">login</h5>
+            </div>
+            <div class="modal-body">
+              <p>body For Modal</p>
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                  <label for="validationCustomUsername" class="form-label"
+                    >UserName</label
+                  >
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend"
+                      ><i class="fas fa-user-alt"></i
+                    ></span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationCustomUsername"
+                      aria-describedby="inputGroupPrepend"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please enter valid username.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustomPassword" class="form-label"
+                    >UserPassword</label
+                  >
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend"
+                      ><i class="fas fa-user-lock"></i
+                    ></span>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="validationCustomPassword"
+                      aria-describedby="inputGroupPrepend"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please enter valid password.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">
+                    Submit form
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <p>Footer For modal</p>
+              <button class="btn btn-danger" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1>Display User Data:</h1>
+      <p>* Entered Username: <span id="displayUsername"></span></p>
+      <p>* Entered Password: <span id="displayPassword"></span></p>
+    </div>
+
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script>
+      (() => {
+        "use strict";
+
+        const forms = document.querySelectorAll(".needs-validation");
+        const displayUsername = document.querySelector("#displayUsername");
+        const displayPassword = document.querySelector("#displayPassword");
+
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              } else {
+                const username = form.querySelector(
+                  "#validationCustomUsername"
+                ).value;
+                const password = form.querySelector(
+                  "#validationCustomPassword"
+                ).value;
+
+                localStorage.setItem("enteredUsername", username);
+                localStorage.setItem("enteredPassword", password);
+
+                displayUsername.textContent = username;
+                displayPassword.textContent = password;
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+
+        const storedUsername = localStorage.getItem("enteredUsername");
+        const storedPassword = localStorage.getItem("enteredPassword");
+
+        if (storedUsername) {
+          displayUsername.textContent = storedUsername;
+        }
+
+        if (storedPassword) {
+          displayPassword.textContent = storedPassword;
+        }
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskDay2-BS-Card-Pills</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container-fluid my-5 text-center">
+      <h1>Card Pills</h1>
+      <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-pills card-header-pills">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="tab" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Card Pills Title</h5>
+          <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+              <h3>HOME</h3>
+              <p>Some Home content.</p>
+            </div>
+            <div id="about" class="tab-pane fade">
+              <h3>About</h3>
+              <p>Some About content.</p>
+            </div>
+            <div id="contact" class="tab-pane fade">
+              <h3>Contact</h3>
+              <p>Some Contact content.</p>
+            </div>
+          </div>
+          <p class="card-text">Card Pills Content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <script src="../js/bootstrap.bundle.js"></script>
+  </body>
+</html>

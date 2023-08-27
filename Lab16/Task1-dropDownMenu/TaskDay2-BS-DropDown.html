@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskDay2-BS-dropDownMenu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <style>
+      .btn-social {
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        transition: background-color 0.3s;
+      }
+
+      .btn-facebook {
+        background-color: #1877f2;
+        padding: 10px 20px;
+      }
+
+      .btn-youtube {
+        background-color: #ff0000;
+        padding: 10px 16px;
+      }
+
+      .btn-twitter {
+        background-color: #1da1f2;
+        padding: 10px 17px;
+      }
+
+      .btn-social:hover {
+        filter: brightness(85%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid my-5 text-center">
+      <div class="btn-group dropend">
+        <button
+          type="button"
+          class="btn btn-primary dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          ShowdropDown
+        </button>
+        <ul class="dropdown-menu">
+          <li class="dropdown-header">WebSite Pages</li>
+          <li class="dropdown-item">Home</li>
+          <li class="dropdown-item">Contact</li>
+          <li class="dropdown-item">About</li>
+          <li class="dropdown-divider"></li>
+          <li class="dropdown-header">Social Pages</li>
+          <li class="dropdown-item">
+            <a
+              href="https://www.facebook.com"
+              class="btn btn-social btn-facebook me-3"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="dropdown-item">
+            <a
+              href="https://www.youtube.com"
+              class="btn btn-social btn-youtube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li class="dropdown-item">
+            <a
+              href="https://twitter.com"
+              class="btn btn-social btn-twitter me-3"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="../js/bootstrap.bundle.js"></script>
+  </body>
+</html>
