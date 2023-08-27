@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(97, 132, 27);
+}
+
+div {
+  width: 75%;
+  background-color: rgb(192, 132, 54);
+  margin-left: 20px;
+}
+
+p {
+  padding-bottom: 30px;
+  border-bottom: 2px dotted black;
+  padding-left: 25px;
+  padding-right: 25px;
+}

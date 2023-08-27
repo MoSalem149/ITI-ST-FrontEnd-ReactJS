@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Image Box Slider</title>
+    <link rel="stylesheet" href="Image-Box-Slider.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img src="Images/1.jpg" alt="Image" id="image" />
+      </div>
+      <div class="buttons">
+        <button id="start" onclick="startButtonClicked()">Start</button>
+        <button id="pause" onclick="pauseButtonClicked()" disabled>
+          Pause
+        </button>
+        <button id="prev" onclick="prevButtonClicked()">Prev</button>
+        <button id="next" onclick="nextButtonClicked()">Next</button>
+      </div>
+    </div>
+    <script src="Image-Box-Slider.js"></script>
+  </body>
+</html>

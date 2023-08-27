@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child-2 Page</title>
+  </head>
+  <body>
+    <p id="message">
+      This message will be displayed character by character.....
+    </p>
+
+    <script>
+      var messageElement = document.getElementById("message");
+      var messageText = messageElement.textContent;
+      messageElement.textContent = "";
+
+      var charIndex = 0;
+
+      function displayCharacters() {
+        if (charIndex < messageText.length) {
+          messageElement.textContent += messageText[charIndex];
+          charIndex++;
+        } else {
+          clearInterval(interval);
+        }
+      }
+
+      var interval = setInterval(displayCharacters, 200);
+    </script>
+  </body>
+</html>

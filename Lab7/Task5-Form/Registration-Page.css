@@ -1,0 +1,10 @@
+div {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+label {
+  min-width: 150px;
+  padding: 4px;
+}

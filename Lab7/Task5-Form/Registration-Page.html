@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="Registration-Page.css" />
+  </head>
+
+  <body>
+    <form action="Server-Page.js" id="userInfoForm" onsubmit="openServerPage()">
+      <div>
+        <label for="txtName">Enter your name:</label>
+        <input type="text" id="txtName" name="userName" />
+      </div>
+      <div>
+        <label for="txtAge">Enter your age:</label>
+        <input type="text" id="txtAge" name="userAge" />
+      </div>
+      <div>
+        <label>Enter your gender:</label>
+        <input
+          type="radio"
+          id="gender-male"
+          name="userGender"
+          value="male"
+        /><img src="Images/5-2.png" alt="male-img" />
+        <input
+          type="radio"
+          id="gender-female"
+          name="userGender"
+          value="female"
+        /><img src="Images/5-1.png" alt="female-img" />
+      </div>
+      <div>
+        <label for="color">Enter your favorite color:</label>
+        <select id="color" name="userFavColor">
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+        </select>
+      </div>
+      <div>
+        <input type="submit" value="Register" />
+      </div>
+    </form>
+
+    <script src="Server-Page.js"></script>
+  </body>
+</html>
