@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-Lab6-Task2</title>
+    <link rel="stylesheet" href="Style-Task2.css" />
+  </head>
+  <body>
+    <h2>Day5 Assignment</h2>
+    <div class="container">
+      <form id="employeeForm">
+        <div class="p1">
+          <label for="name" class="label name">Name</label>
+          <input type="text" id="name" name="name" class="nam" />
+          <span id="nameError" class="error"></span><br /><br />
+        </div>
+        <div class="p2">
+          <label for="age" class="label age">Age</label>
+          <input type="number" id="age" name="age" class="ag" />
+          <span id="ageError" class="error"></span><br /><br />
+        </div>
+        <div class="p3">
+          <label for="salary" class="label salary">Salary</label>
+          <input type="number" id="salary" name="salary" />
+          <span id="salaryError" class="error"></span><br /><br />
+        </div>
+        <div class="p4 col">
+          <label for="department" class="label department">Department</label>
+          <select id="department" name="department" class="sel">
+            <option value="OS">OS</option>
+            <option value="AI">AI</option>
+            <option value="ARC">ARC</option>
+            <option value="CS">CS</option></select
+          ><br /><br />
+        </div>
+        <div class="p5">
+          <button
+            type="button"
+            id="addEmployee"
+            class="btn"
+            onclick="validateAndAddEmployee()"
+          >
+            Add Employee
+          </button>
+        </div>
+      </form>
+      <div class="p6">
+        <label for="sort" class="label">Sort</label>
+        <select id="sort" name="sort" onchange="sortEmployee()">
+          <option value="name">Name</option>
+          <option value="department">Department</option></select
+        ><br /><br />
+      </div>
+      <div class="p7">
+        <label for="filter" class="label">Filter</label>
+        <select id="filter" name="filter" onchange="filterEmployee()">
+          <option value="greater">Greater than 50</option>
+          <option value="less">Less than or equal to 50</option></select
+        ><br /><br />
+      </div>
+      <table id="employeeTable" border="1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Age</th>
+            <th>Salary</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Employee data will be display here -->
+        </tbody>
+      </table>
+    </div>
+    <script src="Modules/Main.js" type="module"></script>
+  </body>
+</html>
