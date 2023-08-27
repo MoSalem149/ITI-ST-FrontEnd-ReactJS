@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.box {
+  display: flex;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.left-content {
+  flex: 0 0 10%;
+  padding: 20px;
+}
+
+.right-content {
+  flex: 0 0 70%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 0 5px 5px 0;
+}
+
+h2 {
+  color: cornflowerblue;
+}
+
+p {
+  color: black;
+}
+
+.button {
+  background-color: #ccc;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  float: right;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

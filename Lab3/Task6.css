@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border: 3px solid black;
+  border-collapse: collapse;
+  width: 60%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+th {
+  background-color: #4b84bc;
+  color: white;
+  text-align: center;
+}
+
+td {
+  text-align: center;
+}
+
+.td {
+  color: #1b1a1c;
+  background-color: #bbcce4;
+}
+
+.td1 {
+  color: #1b1a1c;
+  background-color: #d2f1f4;
+}
+
+th u,
+td u {
+  text-decoration: underline;
+  color: gray;
+  background-color: white;
+}

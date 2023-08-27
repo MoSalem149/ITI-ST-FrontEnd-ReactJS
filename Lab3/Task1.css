@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+body,
+h1,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-image: url(Images/1.jpg);
+}
+
+.container {
+  border: 6px;
+  border-style: double;
+  border-image: linear-gradient(to right, gray, black);
+  border-image-slice: 1;
+  padding: 60px;
+  margin: 40px;
+  margin-left: 170px;
+  width: 60%;
+  background-color: white;
+}
+
+.content1 {
+  border: 2px solid gray;
+  padding: 20px;
+  background-color: #e3a496;
+}
+
+.img1 {
+  display: inline-block;
+  margin-left: 80px;
+}
+
+h1 {
+  display: inline-block;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.img2 {
+  display: inline-block;
+  margin-left: 60px;
+}
+
+a {
+  color: red;
+}
+
+.a {
+  padding-left: 90px;
+}
+
+.img {
+  padding-left: 5px;
+}
+
+.content2 {
+  margin-top: 10px;
+  border: 2px solid gray;
+  padding: 20px;
+  background-color: #e3a496;
+}
+
+.content3 {
+  margin-top: 10px;
+  border: 2px solid gray;
+  padding: 20px;
+  background-color: #e3a496;
+}
+
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+h2 {
+  text-align: left;
+  color: gray;
+}
+
+h3 {
+  text-align: left;
+  color: red;
+}
+
+.content4 {
+  margin-top: 10px;
+  border: 2px solid gray;
+  background-color: #e3a496;
+}
+
+.content4 p {
+  text-align: center;
+}
