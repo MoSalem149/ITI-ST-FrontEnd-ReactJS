@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Form Validation using a sample registration form</title>
+    <link rel="stylesheet" href="Task4-Form-Validation.css" />
+    <script src="Task4-Form-Validation.js"></script>
+  </head>
+  <body>
+    <form name="registration">
+      <table>
+        <tr>
+          <h1>Registration Form</h1>
+        </tr>
+
+        <tr>
+          <th><label for="userName">Name:</label></th>
+          <td>
+            <input type="text" name="userName" size="50" />
+            <span id="uname" class="errorSpan" style="display: none"
+              >userName can not be empty</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <th><label for="userId">User id:</label></th>
+          <td>
+            <input type="text" name="userId" size="12" maxlength="10" />
+            <span id="uid" class="errorSpan" style="display: none"
+              >User ID must numbers</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <th><label for="country">Country:</label></th>
+          <td>
+            <select name="country" onch>
+              <option selected="" value="Default">
+                (Please select a country)
+              </option>
+              <option value="112233">Egypt</option>
+              <option value="223344">KSA</option>
+              <option value="334455">UAE</option>
+              <option value="445566">Kuwait</option>
+              <option value="556677">USA</option>
+            </select>
+            <span id="counteryValidatio" class="errorSpan" style="display: none"
+              >Country must be choose</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <th><label for="email">Email:</label></th>
+          <td>
+            <input type="text" name="email" size="50" />
+            <span id="emailId" class="errorSpan" style="display: none"
+              >Enter a valid email</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <th><label for="passid">Password:</label></th>
+          <td>
+            <input type="password" name="passid" size="12" />
+            <span id="passwordId" class="errorSpan" style="display: none"
+              >Enter a valid password</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <th><label for="userPasswordConfirm">Confirm Password:</label></th>
+          <td>
+            <input type="password" name="userPasswordConfirm" size="12" />
+            <span id="passConfirmId" class="errorSpan" style="display: none"
+              >Enter a valid password confirm</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <th><label id="gender">Sex:</label></th>
+          <td>
+            <input type="radio" name="userSex" value="Male" checked />Male
+            <input type="radio" name="userSex" value="Female" />Female
+            <span id="sexId" class="errorSpan" style="display: none"
+              >choose gender</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <th><label>Languages:</label></th>
+          <td>
+            <input
+              type="checkbox"
+              name="Lang"
+              value="JavaScript"
+              checked
+            />JavaScript <input type="checkbox" name="Lang" value="C#" />C#
+            <input type="checkbox" name="Lang" value="SQL Server" />SQL Server
+            <input type="checkbox" name="Lang" value="ASP.Net" />ASP.Net
+            <span id="languageId" class="errorSpan" style="display: none"
+              >choose language</span
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>
+            <input
+              type="submit"
+              name="submit"
+              value="Submit"
+              onclick="return checkAll();"
+            />
+            <input
+              type="reset"
+              name="reset"
+              value="Reset"
+              onclick="resetAll()"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

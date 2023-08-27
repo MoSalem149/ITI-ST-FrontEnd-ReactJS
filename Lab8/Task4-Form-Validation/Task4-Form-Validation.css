@@ -1,0 +1,41 @@
+input,
+select,
+table,
+textarea {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #b7b7b7;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin-left: 5px;
+  font: normal 16px / normal "Times New Roman", Times, serif;
+  color: rgba(0, 142, 198, 1);
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.66);
+}
+
+th {
+  border: none;
+  -webkit-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+  font: normal normal bold 19px/2 Verdana, Geneva, sans-serif;
+  color: black;
+  background: rgba(255, 221, 221, 1);
+  text-align: left;
+  width: 100px;
+}
+
+span {
+  font: normal normal bold 14px/2 Verdana, Geneva, sans-serif;
+  color: red;
+}
+
+.Error {
+  background: rgba(255, 221, 221, 1);
+}
+
+.Espan {
+  font: normal normal bold 8px/2 Verdana, Geneva, sans-serif;
+  color: red;
+}

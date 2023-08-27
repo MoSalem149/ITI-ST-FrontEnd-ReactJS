@@ -1,0 +1,30 @@
+.container {
+  margin-top: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  width: 80%;
+  margin-left: 100px;
+}
+
+th {
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.style-options {
+  margin-top: 20px;
+}
+
+.style-options td {
+  padding: 5px;
+}
+
+#Text {
+  margin-top: 20px;
+  width: 80%;
+  margin-left: 100px;
+  display: block;
+}

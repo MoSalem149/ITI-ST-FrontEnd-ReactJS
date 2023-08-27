@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Table</title>
+    <link rel="stylesheet" href="Task1-News-Table.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div>
+        <input type="text" id="newsInput" placeholder="Enter your news" />
+        <button onclick="addNews()">Add</button>
+      </div>
+      <table id="newsTable">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>News</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <button onclick="countRows()" id="countBtn">Count Rows</button>
+    </div>
+
+    <script src="Task1-News-Table.js"></script>
+  </body>
+</html>
