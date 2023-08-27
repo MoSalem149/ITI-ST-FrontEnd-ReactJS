@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Task2-DragAndDropImages</title>
+  </head>
+  <body>
+    <div class="parent-container">
+      <div class="child-container">
+        <p class="empty-message" style="display: none">Container is empty</p>
+
+        <img
+          src="Images/1.jpg"
+          id="image1"
+          class="rotate-hover"
+          draggable="true"
+          ondragstart="drag(event)"
+        />
+        <img
+          src="Images/2.jpg"
+          id="image2"
+          class="rotate-hover"
+          draggable="true"
+          ondragstart="drag(event)"
+        />
+        <img
+          src="Images/3.jpg"
+          id="image3"
+          class="rotate-hover"
+          draggable="true"
+          ondragstart="drag(event)"
+        />
+        <img
+          src="Images/4.jpg"
+          id="image4"
+          class="rotate-hover"
+          draggable="true"
+          ondragstart="drag(event)"
+        />
+        <img
+          src="Images/5.jpg"
+          id="image5"
+          class="rotate-hover"
+          draggable="true"
+          ondragstart="drag(event)"
+        />
+        <img
+          src="Images/6.jpg"
+          id="image6"
+          class="rotate-hover"
+          draggable="true"
+          ondragstart="drag(event)"
+        />
+        <img
+          src="Images/7.jpg"
+          id="image7"
+          class="rotate-hover"
+          draggable="true"
+          ondragstart="drag(event)"
+        />
+        <img
+          src="Images/8.jpg"
+          id="image8"
+          class="rotate-hover"
+          draggable="true"
+          ondragstart="drag(event)"
+        />
+        <img
+          src="Images/9.jpg"
+          id="image9"
+          class="rotate-hover"
+          draggable="true"
+          ondragstart="drag(event)"
+        />
+        <img
+          src="Images/10.jpg"
+          id="image10"
+          class="rotate-hover"
+          draggable="true"
+          ondragstart="drag(event)"
+        />
+        <img
+          src="Images/11.jpg"
+          id="image11"
+          class="rotate-hover"
+          draggable="true"
+          ondragstart="drag(event)"
+        />
+        <img
+          src="Images/12.jpg"
+          id="image12"
+          class="rotate-hover"
+          draggable="true"
+          ondragstart="drag(event)"
+        />
+      </div>
+      <div
+        class="empty-container"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      >
+        <!-- Empty container for dropped images -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

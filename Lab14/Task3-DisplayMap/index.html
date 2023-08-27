@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Task3-DisplayMap</title>
+  </head>
+  <body>
+    <div class="parent-container">
+      <div class="child-container">
+        <button
+          type="button"
+          class="btn display-map"
+          onclick="getlocationfun();"
+        >
+          Display Map
+        </button>
+        <button type="button" class="btn detailed" onclick="displayDetails();">
+          Detailed Information
+        </button>
+      </div>
+      <div class="empty-container" id="mymap"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

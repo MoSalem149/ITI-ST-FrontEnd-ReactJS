@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  margin: 60px auto;
+  width: 80vw;
+  background-color: #f1f1f1;
+  padding: 25px;
+  border: 2px solid black;
+  border-radius: 25px;
+  box-shadow: 0 0 40px orangered inset;
+
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-right: 20px;
+  border: 2px solid black;
+  border-radius: 25px;
+  height: 60vh;
+  box-shadow: 0 0 40px yellow inset;
+}
+
+.video-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  overflow: hidden;
+  border: 2px solid black;
+  height: 60vh;
+  border-radius: 25px;
+  box-shadow: 0 0 40px yellow inset;
+}
+
+.video-player {
+  max-width: 80%;
+  max-height: 80%;
+  transform-origin: center;
+  transition: transform 0.3s;
+  border-radius: 30px;
+}
+
+.video-player:hover {
+  transform: scale(1.2);
+}
+
+.btns {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60vh;
+  overflow-y: scroll;
+}
+
+.btns:hover {
+  background-color: orange;
+}
+
+button {
+  padding: 7px;
+  border-radius: 7px;
+  border: 2px solid rgb(8, 144, 234);
+}
+
+button:hover {
+  background-color: orange;
+}
+
+.rotate {
+  animation: rotateAnimation 1s linear;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+    background-color: #fff;
+  }
+
+  to {
+    transform: rotate(360deg);
+    background-color: rgb(8, 144, 234);
+  }
+}

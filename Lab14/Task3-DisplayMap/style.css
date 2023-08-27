@@ -1,0 +1,48 @@
+.parent-container {
+  display: grid;
+  width: 60vw;
+  height: 85vh;
+  border: 2px solid black;
+  margin: 60px auto;
+  border-radius: 40px;
+  box-shadow: 0 0 40px orangered inset;
+}
+
+.child-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  width: 50vw;
+  height: 5vh;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 40px;
+  box-shadow: 0 0 40px yellow inset;
+}
+
+.empty-container {
+  border: 2px solid black;
+  width: 50vw;
+  height: 50vh;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 40px;
+  box-shadow: 0 0 40px yellow inset;
+}
+
+.btn {
+  margin: 30px 40px;
+  padding: 5px 15px;
+  background-color: rgb(42, 67, 255);
+  color: white;
+  border: 3px solid blue;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.9s, skew 0.9s;
+}
+
+.btn:hover {
+  transform: scale(1.6) skew(15deg);
+}

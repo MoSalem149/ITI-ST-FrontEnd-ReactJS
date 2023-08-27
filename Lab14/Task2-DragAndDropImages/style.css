@@ -1,0 +1,50 @@
+.parent-container {
+  display: grid;
+  width: 60vw;
+  height: 85vh;
+  border: 2px solid black;
+  margin: 60px auto;
+  border-radius: 40px;
+  box-shadow: 0 0 40px orangered inset;
+}
+
+.child-container {
+  border: 2px solid black;
+  width: 50vw;
+  height: 30vh;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 40px;
+  box-shadow: 0 0 40px yellow inset;
+}
+
+.rotate-hover {
+  width: 100px;
+  height: 100px;
+  border: 2px solid transparent;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.rotate-hover:hover {
+  transform: rotate(360deg) scale(1.4);
+  border: 4px solid rgb(1, 170, 255);
+  transition: transform 0.7s, border-color 0.8s;
+}
+
+.empty-container {
+  border: 2px solid black;
+  width: 50vw;
+  height: 30vh;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 40px;
+  box-shadow: 0 0 40px yellow inset;
+}
+
+.empty-container:hover {
+  background-color: rgb(1, 170, 255);
+}
+
+.empty-message {
+  display: none;
+}

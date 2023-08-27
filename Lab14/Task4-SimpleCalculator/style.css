@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#calculator-container {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+  padding: 40px;
+  border-radius: 60px 0 60px 0;
+  background-color: yellow;
+  box-shadow: 15px 15px 20px black;
+}
+
+.operation-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.add {
+  background-color: red;
+  box-shadow: 0 0 30px black inset;
+}
+
+.mul {
+  background-color: green;
+  box-shadow: 0 0 30px black inset;
+}
+
+label {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+input {
+  padding: 15px;
+}
+
+span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#mul-result,
+#add-result {
+  font-size: 25px;
+  font-weight: bold;
+}
